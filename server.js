@@ -16,7 +16,7 @@ mongoose.connect('mongodb://localhost:27017/products').then(() => console.log('M
 const productSchema = new mongoose.Schema({
   name: String,
   price: Number,
-  category: String
+  category: String,
 });
 
 const Product = mongoose.model('Product', productSchema);
